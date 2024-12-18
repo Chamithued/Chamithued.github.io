@@ -1,0 +1,106 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #e7f6ff; /* Light pastel blue background */
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 50px 30px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    border: 1px solid #f0f4f8; /* Light border for a soft look */
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    border: 4px solid transparent;
+    background-image: linear-gradient(45deg, #ff66b2, #ff3366, #ff6633);
+    background-clip: padding-box;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.2);
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin: 20px 0;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 30px;
+    margin: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Change color to bright blue when hovered (clu color) */
+.social-icons a:hover {
+    color: #0077b5;  /* Bright blue color */
+    transform: scale(1.1);
+}
+
+.social-icons a:active {
+    transform: scale(1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 16px;
+        max-width: 600px;
+    }
+
+    .social-icons a {
+        font-size: 28px;
+    }
+}
